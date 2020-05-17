@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-rendering: optimizeLegibility;
+    position: relative;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Courier New', sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    background: linear-gradient(150deg,rgb(165, 167, 170) 15%,rgb(153, 212, 219) 70%,#FFDFCB 94%);
+
+  }
+  
+  h1 {
+    font-size: 2.0em;
+  }
+  
+  .table-bordered, .table-bordered td, .table-bordered th {
+    border: 1px solid #2F465D;
+  }
+
+  
+  html,body { height:100%; }
+
+
+html,body {
+  overflow: auto;
+}
+
