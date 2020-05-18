@@ -1,18 +1,17 @@
-hr{
+hr {
     width: 90%;
     float: right;
-
 }
-.header-container{
+
+.header-container {
     display: flexbox;
 }
- .search-container {
-      
-        float:right;
 
-    }
-.searchsubmit{
+.search-container {
+    float: right;
+}
 
+.searchsubmit {
     border-style: groove;
     font-size: 65%;
     border-radius: 20%;
@@ -20,56 +19,49 @@ hr{
     color: white;
     border-bottom-color: rgb(63, 159, 197);
     background-color: #999;
-    text-align: left;;
+    text-align: left;
+    ;
     text-shadow: -1px 0 rgb(61, 202, 212), 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.searchfeild{
+.searchfeild {
     size: 1000px;
-    background-color:  rgba(217, 234, 235, 0.849);
+    background-color: rgba(217, 234, 235, 0.849);
     border-color: rgb(133, 156, 190);
     color: black
-
 }
 
 .searchsubmit:hover {
-    
-    background-color:  rgb(190, 187, 187);
+    background-color: rgb(190, 187, 187);
     color: rgba(168, 232, 235, 0.849);
-
 }
 
 .searchsubmit:active {
     background-color: rgb(179, 199, 207);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
 
-  .table-responsive{
+.table-responsive {
     width: 90%;
+}
 
-
-  }
-
-  table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     font-size: 90%;
-  }
+    font-weight: 900;
+}
 
-  .pagination-controls:hover{
-    background-color:  rgb(190, 187, 187);
+.pagination-controls:hover {
+    background-color: rgb(190, 187, 187);
     color: rgba(168, 232, 235, 0.849);
-  }
+}
 
-  .pageTitle{
+.pageTitle {
     float: left;
-
     color: white;
     text-shadow: -1px 0 rgb(61, 202, 212), 0 1px black, 1px 0 black, 0 -1px black;
-
     font-family: Impact, Charcoal, sans-serif;
-
-
-   
-   
-  }
+}
