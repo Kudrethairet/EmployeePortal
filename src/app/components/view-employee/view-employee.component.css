@@ -1,0 +1,46 @@
+
+.btn btn-primary {
+    text-align: right;
+   }
+ 
+ 
+ 
+ .action_icon{
+   display: flex;
+   padding: 0;
+   margin: 0;
+   opacity: 1;
+   transition: 0s
+   
+ }
+ 
+ 
+ #edit{
+   margin: cm;
+   height: 1cm;
+   text-align: right;
+   border: none;
+ 
+ 
+ }
+ #submit{
+   margin: cm;
+   height: 1cm;
+ position: static;
+   text-align: right;
+ 
+ }
+ 
+ 
+ #navigateBack{
+   margin: cm;
+   height: 1cm;
+ 
+ 
+   text-align: right;
+ }
+
+ .form-control{
+    font-weight: 900;
+
+ }

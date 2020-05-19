@@ -10,12 +10,13 @@ import { IEmployee } from './employee';
 export class EmployeesComponent implements OnInit {
   pageOfItems: Array<any>;
   page:number = 1;
-   employees: IEmployee[]=[];
+   public employees; 
    totoalRecords : number;
   constructor(private employeeService: EmployeesService) { }
 
   ngOnInit(): void {
     this.getEmployeesList();
+    //this.getEmployee(100);
   }
 
 onChangePage(pageOfItem: Array<any>){
@@ -24,17 +25,11 @@ onChangePage(pageOfItem: Array<any>){
 
 
   getEmployeesList(){
-    this.employeeService.getEmployees().subscribe({
-    next: employees => {
-      this.employees=employees;
-      console.log(this.employees);
-      this.totoalRecords=employees.length;
-      console.log(this.totoalRecords)
-
-    },
-  }
+    this.employeeService.getEmployees().subscribe(
+      data => {this.employees = data}
     )
   }
+
 
 
 }

@@ -10,6 +10,7 @@ import { EmployeesService } from './services/employees.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ManagersComponent } from './components/managers/managers.component';
 import { DepartmentsComponent } from './components/departments/departments.component';
+import { ViewEmployeeComponent } from './components/view-employee/view-employee.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,8 @@ import { DepartmentsComponent } from './components/departments/departments.compo
     NevigatorComponent,
     ManagersComponent,
     DepartmentsComponent,
+    ViewEmployeeComponent
+
     
   ],
   imports: [

@@ -12,31 +12,47 @@
         <hr>
       </div>
 
-   
-
+      <div>
+        <button  id="buttonAdd"  class="add" type="button">Add New User</button>    
+    </div>
  <div class="table-responsive">
+   
     <table class="table">
         <thead>
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>Date Of Birth</th>
+                <th>email</th>
+                <th>Phone Number</th>
                 <th>Salary</th>
+                <th>Job ID</th>
+                <th>Edit</th>
+
             </tr>
 
         </thead>
 <tbody>
     <tr  *ngFor="let employee of employees | paginate: {id: 'listing_pagination',
-                itemsPerPage: 5,
+                itemsPerPage: 10,
                 currentPage: page,
                 totalItems:totoalRecords} ">
         <td>{{employee.first_name}}</td>
         <td>{{employee.last_name}}</td>
 
-        <td>{{employee.date_of_birth}}</td>
-        <td>{{employee.Salary}}  $</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.phone_number}}</td>
+    
+        <td>{{employee.salary}}  $</td>
 
+        <td>{{employee.job_id}}</td>
+        <td>
+            <div class="action_icons">
+                <button [routerLink]="['/employees/view', employee.employee_id]" id="button"  class="edit" type="button">Edit</button>
 
+                
+           
+        </div>
+        </td>
     </tr>
 </tbody>
 

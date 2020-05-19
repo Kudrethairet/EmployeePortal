@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+       
+      </div>
+  
+    
+        <div style="color: red;">
+           
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> First Name: </label>
+            <input type="text" class="form-control"  value ="{{employee.first_name}}"  [disabled]='toggleUserNameButton' required autofocus/>
+            
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> Last Name: </label>
+            <input type="email" class="form-control"  value ="{{employee.last_name}}"  [disabled]='toggleUserNameButton' />
+        
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> email: </label>
+            <input type="text" class="form-control" value ="{{employee.email}}"  [disabled]='toggleUserNameButton' />
+        
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label>Phone Number: </label>
+            <input class="form-control"  value ="{{employee.phone_number}}"  [disabled]='toggleUserNameButton'   >
+          
+  
+         
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+             <label>Salary: </label>
+            <input type="text" class="form-control"  value ="{{employee.salary}}"  [disabled]='toggleUserNameButton' />
+        
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label>Job ID: </label>
+            <input type="text" class="form-control" value ="{{employee.job_id}}"  [disabled]='toggleUserNameButton' />
+       
+
+        </div>
+        
+        
+        <div class="action_icon">   
+            <button (click)="switchButton(toggleUserNameButton)"  id="edit" class="btn btn-primary">{{buttonText()}}</button>
+
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+            <a  routerLink="/employees"  id="navigateBack" class="btn btn-primary" type="button" >Back to List</a>
+            &nbsp; &nbsp; 
+          <button id="submit" type="confirm" class="btn btn-primary" [disabled]="confirmButtonStarus">CONFIRM</button>
+
+        </div>      
+</div>

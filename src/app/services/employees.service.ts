@@ -9,14 +9,19 @@ import { IEmployee } from '../components/employees/employee';
 })
 export class EmployeesService {
 
-private EmployeesURL="api/employess/dummyData.json"
+//private EmployeesURL="api/employess/dummyData.json"
 
   constructor(private http: HttpClient){}
   
-  getEmployees(): Observable<IEmployee[]> {
-    return this.http.get<IEmployee[]>(this.EmployeesURL)
+  getEmployees(){
+    return this.http.get("/server/api/getEmployees");
 
     
+  }
+
+  getEmployee(id: number){
+
+   return this.http.get("/server/api/getEmployees/"+ id);
   }
  
   private handleError(err: HttpErrorResponse){
