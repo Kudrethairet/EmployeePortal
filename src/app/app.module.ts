@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ManagersComponent } from './components/managers/managers.component';
 import { DepartmentsComponent } from './components/departments/departments.component';
 import { ViewEmployeeComponent } from './components/view-employee/view-employee.component';
+import { AddEmployeesComponent } from './components/add-employees/add-employees.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { ViewEmployeeComponent } from './components/view-employee/view-employee.
     NevigatorComponent,
     ManagersComponent,
     DepartmentsComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
+    AddEmployeesComponent
 
     
   ],
@@ -27,7 +30,8 @@ import { ViewEmployeeComponent } from './components/view-employee/view-employee.
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ReactiveFormsModule
   ],
   providers:[EmployeesService],
   bootstrap: [AppComponent]

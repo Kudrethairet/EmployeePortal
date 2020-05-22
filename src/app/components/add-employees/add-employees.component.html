@@ -1,0 +1,61 @@
+<div class="container">
+    <form [formGroup]="employeeForm" (ngSubmit)="submitNewEmployeeAction()" novalidate>
+        <div *ngIf="validMessage != ''" style="color: red;">
+            <h3 class="has-info">{{validMessage}}</h3>
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> First Name: </label>
+            <input type="text" class="form-control" formControlName="first_name" required autofocus/>
+            
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> Last Name: </label>
+            <input type="text" class="form-control" formControlName="last_name" required/>
+        
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> Email: </label>
+            <input type="Email" class="form-control" formControlName="email" required/>
+        
+
+        </div>
+     
+        <div class="form-group">
+            <label style="color: red;">*</label>
+             <label> Phone Number: </label>
+            <input type="text" class="form-control" formControlName="phone_number" required/>
+        
+
+        </div>
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> Salary: </label>
+            <input type="text" class="form-control" formControlName="salary" required/>
+       
+
+        </div>
+        
+      
+        <div class="form-group">
+            <label style="color: red;">*</label>
+            <label> Job Title: </label>
+            <select class="form-control" formControlName="job_id" required>
+          <option value="">Please select a job: </option>
+          <option *ngFor="let title of Job_titles">
+                  {{title.job_title}}
+          </option>
+        </select>
+         
+
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+    </form>
+    <button routerLink="/employees"  type="navigate" class="btn btn-primary" >Back</button>
+
+</div>

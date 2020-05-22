@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeesService } from 'src/app/services/employees.service';
 import { IEmployee } from './employee';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employees',
@@ -12,7 +13,7 @@ export class EmployeesComponent implements OnInit {
   page:number = 1;
    public employees; 
    totoalRecords : number;
-  constructor(private employeeService: EmployeesService) { }
+  constructor(private employeeService: EmployeesService, private router: Router) { }
 
   ngOnInit(): void {
     this.getEmployeesList();
@@ -30,6 +31,11 @@ onChangePage(pageOfItem: Array<any>){
     )
   }
 
+addNewUserOnclick(){
+  this.router.navigate(['/createNewEmployee']);
+
+  
+}
 
 
 }
